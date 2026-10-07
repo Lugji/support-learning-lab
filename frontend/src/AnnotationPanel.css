@@ -1,0 +1,29 @@
+.annotation-panel {
+  margin-top: 32px; padding: 28px; background: #fff;
+  border: 1px solid #dce5df; border-radius: 20px; color: #20352b;
+}
+.annotation-panel h2 { margin: 8px 0 12px; font-size: 1.7rem; }
+.annotation-panel p { line-height: 1.6; }
+.annotation-eyebrow { color: #15803d; font-size: .75rem; letter-spacing: .14em; }
+.annotation-progress { color: #52645a; font-size: .9rem; }
+.annotation-text {
+  margin: 24px 0; padding: 24px; background: #f3f7f4;
+  border-left: 4px solid #15803d; border-radius: 8px;
+  font-size: 1.15rem; line-height: 1.6; overflow-wrap: anywhere;
+}
+.annotation-label { display: block; margin-bottom: 10px; font-weight: 600; }
+.annotation-panel select {
+  width: 100%; padding: 12px; border: 1px solid #cbd5e1;
+  border-radius: 10px; background: #fff; color: #20352b; font: inherit;
+}
+.annotation-save, .annotation-retry { margin-top: 16px; }
+.annotation-suggestions { margin-top: 24px; font-size: .9rem; }
+.annotation-suggestions summary { cursor: pointer; }
+.annotation-suggestions li { margin: 8px 0; }
+.annotation-success { color: #15803d; }
+.annotation-error { color: #b91c1c; }
+.annotation-note { margin-top: 24px; font-size: .8rem; color: #52645a; }
+@media (max-width: 600px) {
+  .annotation-panel { padding: 18px; }
+  .annotation-panel h2 { font-size: 1.35rem; }
+}

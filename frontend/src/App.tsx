@@ -1,3 +1,4 @@
+import AnnotationPanel from './AnnotationPanel'
 import ExperimentDashboard from './ExperimentDashboard'
 import { useState } from 'react'
 import './App.css'
@@ -113,6 +114,7 @@ export default function App() {
         </p>
       </section>
       <ExperimentDashboard />
+      <AnnotationPanel />
     </main>
   )
 }

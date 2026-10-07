@@ -8,3 +8,4 @@ reports/baseline_errors.csv
 
 node_modules/
 dist/
+.pytest_cache/

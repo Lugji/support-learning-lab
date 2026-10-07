@@ -73,3 +73,8 @@ def get_experiments(weighting: Literal["none", "balanced"] = "balanced"):
         "seeds": [7, 21, 42],
         "results": results,
     }
+
+
+from annotation_api import router as annotation_router
+
+app.include_router(annotation_router)
