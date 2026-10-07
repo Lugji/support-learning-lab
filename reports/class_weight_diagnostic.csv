@@ -1,0 +1,7 @@
+selection,labels,class_weight,macro_f1,predicted_categories
+start,385,none,0.5083467861195842,77
+start,385,balanced,0.5083467861195842,77
+random,485,none,0.43647618681905,75
+random,485,balanced,0.5477816002837402,77
+margin,485,none,0.39917190406443054,72
+margin,485,balanced,0.5547621242530769,77
