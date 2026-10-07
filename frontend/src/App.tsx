@@ -1,3 +1,4 @@
+import ExperimentDashboard from './ExperimentDashboard'
 import { useState } from 'react'
 import './App.css'
 
@@ -111,6 +112,7 @@ export default function App() {
           für eine richtige Zuordnung.
         </p>
       </section>
+      <ExperimentDashboard />
     </main>
   )
 }

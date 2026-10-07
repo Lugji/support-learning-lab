@@ -1,0 +1,38 @@
+.experiment-dashboard {
+  margin-top: 36px;
+  padding: 28px;
+  border: 1px solid #dce5df;
+  border-radius: 20px;
+  background: #fff;
+  color: #20352b;
+}
+.experiment-dashboard h2 { margin: 8px 0 12px; font-size: 1.7rem; }
+.experiment-dashboard p { line-height: 1.6; }
+.experiment-eyebrow { color: #15803d; font-size: .75rem; letter-spacing: .14em; }
+.experiment-filter { display: grid; gap: 8px; margin: 24px 0; font-weight: 600; }
+.experiment-filter select {
+  width: 100%; padding: 12px; border: 1px solid #cbd5e1;
+  border-radius: 10px; background: #f8fafc; color: #20352b; font: inherit;
+}
+.experiment-stats { display: flex; gap: 16px; flex-wrap: wrap; }
+.experiment-stats > div {
+  flex: 1 1 150px; padding: 16px; background: #f3f7f4; border-radius: 12px;
+}
+.experiment-stats span { display: block; font-size: .8rem; color: #52645a; }
+.experiment-stats strong { display: block; margin-top: 8px; font-size: 1.3rem; }
+.experiment-legend { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 28px; }
+.experiment-legend span { display: flex; align-items: center; gap: 8px; font-size: .85rem; }
+.experiment-legend i { width: 12px; height: 12px; border-radius: 50%; }
+.experiment-chart { display: block; width: 100%; height: auto; margin-top: 12px; }
+.experiment-chart text { fill: #52645a; font-size: 12px; font-family: inherit; }
+.experiment-table-wrap { overflow-x: auto; }
+.experiment-dashboard table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.experiment-dashboard caption { text-align: left; margin: 12px 0; color: #52645a; font-size: .85rem; }
+.experiment-dashboard th, .experiment-dashboard td {
+  padding: 12px 8px; text-align: left; border-bottom: 1px solid #e2e8f0; white-space: nowrap;
+}
+.experiment-note { margin-top: 20px; font-size: .8rem; color: #52645a; }
+@media (max-width: 600px) {
+  .experiment-dashboard { padding: 18px; }
+  .experiment-dashboard h2 { font-size: 1.35rem; }
+}

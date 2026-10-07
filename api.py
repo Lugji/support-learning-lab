@@ -34,3 +34,42 @@ def predict(request: PredictionRequest):
             for index in top_indices
         ],
     }
+
+
+import csv
+from typing import Literal
+
+
+@app.get("/experiments")
+def get_experiments(weighting: Literal["none", "balanced"] = "balanced"):
+    reports_dir = Path(__file__).parent / "reports"
+    if weighting == "balanced":
+        reports_dir = reports_dir / "balanced"
+
+    report_path = reports_dir / "active_learning_summary.csv"
+
+    if not report_path.exists():
+        raise HTTPException(
+            status_code=404,
+            detail="Die Ergebnisse für diese Gewichtung fehlen.",
+        )
+
+    with report_path.open(newline="", encoding="utf-8") as file:
+        results = [
+            {
+                "strategy": row["strategy"],
+                "labeled_examples": int(row["labeled_examples"]),
+                "mean": float(row["mean"]),
+                "std": float(row["std"]),
+            }
+            for row in csv.DictReader(file)
+        ]
+
+    return {
+        "dataset": "BANKING77",
+        "metric": "macro_f1",
+        "evaluation": "validation",
+        "weighting": weighting,
+        "seeds": [7, 21, 42],
+        "results": results,
+    }
