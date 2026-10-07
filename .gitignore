@@ -5,3 +5,6 @@ __pycache__/
 data/
 artifacts/
 reports/baseline_errors.csv
+
+node_modules/
+dist/
