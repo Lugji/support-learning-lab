@@ -1,3 +1,4 @@
+import TrainingStatus from './TrainingStatus'
 import { useEffect, useState } from 'react'
 import './AnnotationPanel.css'
 
@@ -84,6 +85,7 @@ export default function AnnotationPanel() {
 
   return (
     <section className="annotation-panel" aria-labelledby="annotation-title">
+      <TrainingStatus />
       <p className="annotation-eyebrow">HUMAN IN THE LOOP</p>
       <h2 id="annotation-title">Hilf dem Modell mit deiner Entscheidung</h2>
       <p>
@@ -166,8 +168,8 @@ export default function AnnotationPanel() {
 
       <p className="annotation-note">
         Deine Entscheidungen werden dauerhaft lokal gespeichert.
-        Das Modell und die Reihenfolge bleiben bis zum nächsten Training
-        auf ihrem bisherigen Stand.
+        Modellvorschläge und Reihenfolge werden nach einem neuen Training
+        und dessen Aktivierung aktualisiert.
       </p>
     </section>
   )

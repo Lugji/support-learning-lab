@@ -1,0 +1,10 @@
+{
+  "run_id": "38f9665f6f3f",
+  "evaluation": "validation",
+  "validation_examples": 2001,
+  "human_annotations": 10,
+  "training_examples": 395,
+  "macro_f1_before": 0.5083467861195842,
+  "macro_f1_after": 0.5110935644652406,
+  "difference": 0.0027467783456563977
+}
