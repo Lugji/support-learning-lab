@@ -1,0 +1,9 @@
+{
+  "evaluation_split": "validation",
+  "random_state": 42,
+  "training_examples": 8002,
+  "validation_examples": 2001,
+  "accuracy": 0.8430784607696152,
+  "macro_f1": 0.8388711198029686,
+  "incorrect_predictions": 314
+}
